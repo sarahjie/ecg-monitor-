@@ -1,7 +1,7 @@
 # Cardiac Rhythm Data Visualization Dashboard
 
 A dynamic, interactive web application that simulates the visualization and analysis of electrocardiogram (ECG) data.
-https://sarahjie.github.io/ECG-monitor/ 
+https://sarahjie.github.io/ecg-monitor-/ 
 
 ## 🚀 Features
 
