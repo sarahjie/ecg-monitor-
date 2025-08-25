@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiac Rhythm Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Cardiac Rhythm Monitor</h1>
+        <div class="ecg-monitor">
+            <h2>Real-time ECG Simulation</h2>
+            <!-- Canvas -->
+            <canvas id="ecgCanvas" width="800" height="300"></canvas>
+            <div class="controls">
+                <button id="startBtn">Start Monitor</button>
+                <button id="stopBtn" disabled>Stop</button>
+                <span id="hrValue">HR: -- bpm</span>
+            </div>
+        </div>
+
+        <!-- HRV Analysis Dashboard -->
+        <div class="hrv-dashboard">
+          <h2>HRV Analysis</h2>
+          <div class="charts-container">
+              <div class="chart-wrapper">
+                  <h3>Beat-to-Beat Interval (Simulated)</h3>
+                  <canvas id="rrIntervalChart"></canvas>
+              </div>
+              <div class="chart-wrapper">
+                  <h3>Heart Rate Distribution (Simulated)</h3>
+                  <canvas id="hrDistributionChart"></canvas>
+              </div>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="alerts-panel">
+            <h2>Alerts</h2>
+            <div id="alertContainer">
+                <!-- Alerts will be dynamically inserted here by JavaScript -->
+                <p class="no-alert">No anomalies detected.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
